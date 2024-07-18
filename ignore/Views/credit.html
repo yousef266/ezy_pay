@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>credit card</title>
+</head>
+<body>
+
+<div class="container">
+    <h2>credit Card</h2>
+    <form action="#" method="post">
+        <label for="cardNumber">card number</label>
+        <input type="text" id="cardNumber" name="cardNumber" required>
+        <label for="PIN">PIN</label>
+        <input type="text" id="pin" name="pin" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        <label for="username">Confirm password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+    </form>
+    <div>
+        <button class="btn">Add</button>
+    </div>
+    <button onclick="goBack()">Back</button>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</div>
+
+</body>
+</html>

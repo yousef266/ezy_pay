@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Management</title>
+</head>
+<body>
+    <h2>Add Card</h2>
+    <form action="add_card.php" method="post">
+        <label for="add_card_number">Card Number:</label>
+        <input type="text" id="add_card_number" name="card_number" required><br><br>
+        
+        <label for="add_expiry_date">Expiry Date:</label>
+        <input type="text" id="add_expiry_date" name="expiry_date" placeholder="MM/YYYY" required><br><br>
+        
+        <label for="add_cvv">CVV:</label>
+        <input type="password" id="add_cvv" name="cvv" maxlength="4" required><br><br>
+        
+        <label for="add_card_type">Card Type:</label>
+        <select id="add_card_type" name="card_type" required>
+            <option value="Visa">Visa</option>
+            <option value="MasterCard">MasterCard</option>
+            <!-- Add other card types as needed -->
+        </select><br><br>
+        
+        <input type="submit" value="Add Card">
+    </form>
+
+    <hr>
+
+    <h2>Edit Card</h2>
+    <form action="edit_card.php" method="post">
+        <label for="edit_card_number">Card Number:</label>
+        <input type="text" id="edit_card_number" name="card_number" required><br><br>
+        
+        <label for="old_pin">Old PIN:</label>
+        <input type="password" id="old_pin" name="old_pin" maxlength="4" required><br><br>
+        
+        <label for="new_pin">New PIN:</label>
+        <input type="password" id="new_pin" name="new_pin" maxlength="4" required><br><br>
+        
+        <input type="submit" value="Edit Card">
+    </form>
+
+    <hr>
+
+    <h2>Remove Card</h2>
+    <form action="remove_card.php" method="post">
+        <label for="remove_card_id">Card ID:</label>
+        <input type="text" id="remove_card_id" name="card_id" required><br><br>
+        
+        <input type="submit" value="Remove Card">
+    </form>
+</body>
+</html>

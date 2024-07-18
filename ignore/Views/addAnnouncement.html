@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Announcement</title>
+</head>
+<body>
+    <h1>Add Announcement</h1>
+    <textarea id="announcementContent" name="announcementContent" rows="5" cols="50" maxlength="100" placeholder="Write announcement here (less than 100 characters)" required></textarea><br><br>
+        <button type="submit">Add</button>
+    </form>
+    <button onclick="goBack()">Back</button>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
